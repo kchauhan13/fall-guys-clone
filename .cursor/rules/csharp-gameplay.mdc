@@ -1,0 +1,24 @@
+---
+description: C# rules for Tumble gameplay scripts
+globs: Assets/**/*.cs
+alwaysApply: false
+---
+
+# Gameplay C#
+
+Assemblies: `Tumble.Simulation`, `Tumble.Presentation`, `Tumble.App`. Simulation does not reference presentation, UI, or the Input System.
+
+```csharp
+// Motor step. No input, no Time.time, no camera.
+public void Simulate(PlayerCommand command, RoundClock clock, float dt)
+{
+    if (command.JumpPressed && CanJump(clock))
+        StartJump();
+}
+```
+
+- Match file name to the type. One main type per file.
+- Profile fields replace numeric literals for anything listed in `docs/game-feel.md`.
+- `MotorState` keeps the explicit values in `docs/contracts.md`.
+- Events notify presentation. Subscribers do not write velocity or qualification.
+- Edit Mode tests cover pure command logic. Feel is checked with the spec's Gym checklist.

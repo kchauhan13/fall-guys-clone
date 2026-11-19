@@ -1,0 +1,15 @@
+---
+description: Keep Tumble specs, feel numbers, and status in sync
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Living docs
+
+`docs/STATUS.md` wins when two docs disagree about what to build.
+
+- Feel numbers are edited only in `docs/game-feel.md`, then logged in `docs/tuning-log.md`.
+- Type shapes change in `docs/contracts.md` first. Specs describe behavior and name fields; they do not paste speeds or durations.
+- A new feature is a new `SPEC-0XX` file plus a row in `docs/specs/README.md`, using that folder's format.
+- Milestone gates move only in `docs/milestones.md` and `docs/STATUS.md`.
+- A technical reversal is a new ADR. Accepted ADRs are not rewritten in place.

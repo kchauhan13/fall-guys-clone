@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d436b33d2f01946a28dcaed3dea4874f, type: 3}
+  m_Name: DefaultRunnerAnimationProfile
+  m_EditorClassIdentifier: 
+  walkCycleSpeed: 0.85
+  runCycleSpeed: 2.3
+  locomotionBlendDamp: 0.08
+  airBlendSpeedBand: 3
+  airPoseDelay: 0.1
+  stateCrossfade: 0.08
+  maxTurnLean: 12
+  leanFullLateralAccel: 30
+  turnLeanResponsiveness: 12
+  landSquash: 0.15
+  landSquashFullImpact: 12
+  landSquashDuration: 0.18

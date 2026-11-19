@@ -1,0 +1,20 @@
+---
+description: Working agreement for Tumble. Read before any gameplay change.
+alwaysApply: true
+---
+
+# Tumble
+
+Unity 2021.3.25f1, built-in pipeline. Working title Tumble. Read `docs/STATUS.md` before gameplay work, then that milestone's spec.
+
+Pillars: momentum you can feel, bodies are the comedy, routes stay readable.
+
+- Simulation consumes `PlayerCommand`. Input reads live in `LocalCommandSource` only.
+- Forces and motor state change in `FixedUpdate`. Gameplay time comes from `RoundClock`.
+- Runners are identified by `PlayerId`.
+- Feel numbers live on profile assets. The current values are the Start column in `docs/game-feel.md`.
+- Blender meshes are visual. Gameplay colliders are Unity primitives.
+- Use APIs that exist on Unity 2021.3.
+- Netcode, matchmaking, and packages other than those named in the active spec stay out until `docs/STATUS.md` says otherwise.
+- If `implementation_allowed` is false, do not add scripts, scenes, or packages.
+- A behavior change updates its spec in the same task. A number change updates `docs/game-feel.md` and `docs/tuning-log.md`.

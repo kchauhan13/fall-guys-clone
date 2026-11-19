@@ -1,0 +1,17 @@
+{
+    "name": "Tumble.App",
+    "rootNamespace": "Tumble.App",
+    "references": [
+        "Tumble.Simulation",
+        "Tumble.Presentation"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
